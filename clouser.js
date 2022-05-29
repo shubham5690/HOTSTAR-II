@@ -15,7 +15,7 @@ let id;
 async function searchMovies(q){
     // url prepare;
     try{
-        let url=`http://www.omdbapi.com/?s=${q}&apikey=ef650941`;
+        let url=`https://www.omdbapi.com/?s=${q}&apikey=ef650941`;
    
     let res= await fetch(url)
     let data= await res.json() //res.json()---just to collect the data
