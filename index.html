@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width:300px;
+            margin-top: 25px;
+            height: 30px;
+
+        }
+        #movies{
+            height: 250px;
+            width: 306px;
+            border: 1px solid black;
+            border-top: none;
+            overflow: scroll;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>HOTSTAR</h1>
+    <!-- <input type="text" oninput="main()" id="query"> -->
+    <input type="text" oninput="debounce(main,1000)" id="query">
+    <div id="movies"></div>
+    <div id="movie_detail"></div>
+</body>
+</html>
+<script src="clouser.js"></script>
